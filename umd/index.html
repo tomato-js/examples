@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <div class="j-class">class</div>
+    <div id="j-id">id</div>
+</div>
+<script src="https://unpkg.com/@tomato-js/entry@0.0.2/dist/umd/index.umd.min.js"></script>
+<script>
+    const classNode = window.tomato.element.get('.j-class');
+    const idNode = window.tomato.element.get('j-id');
+    const queryObje = window.tomato.path.parse('?a=123&b=456');
+    classNode.innerHTML = queryObje.a;
+    idNode.innerHTML = queryObje.b;
+</script>
+</body>
+</html>

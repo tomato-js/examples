@@ -1,0 +1,35 @@
+{
+  "name": "examples",
+  "private": true,
+  "description": "Examples for tomato-js",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -o",
+    "build:all-in-commonjs": "cd all-in-commonjs && rollup -c",
+    "build:all-in-esm": "cd all-in-esm && rollup -c",
+    "build:all-in-typescript": "cd all-in-typescript && rollup -c",
+    "build:split-in-commonjs": "cd split-in-commonjs && rollup -c",
+    "build:split-in-esm": "cd split-in-esm && rollup -c",
+    "build:split-in-typescript": "cd split-in-typescript && rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomato-js/examples.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomato-js/examples/issues"
+  },
+  "homepage": "https://github.com/tomato-js/examples#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
+    "http-server": "^0.12.1",
+    "rollup": "^1.31.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "typescript": "^3.8.2"
+  }
+}
