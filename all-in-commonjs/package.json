@@ -11,6 +11,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@tomato-js/entry": "0.0.3"
+    "@tomato-js/entry": "latest"
   }
 }
