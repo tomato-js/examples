@@ -1,0 +1,23 @@
+{
+  "name": "poll-with-axios",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server -p 8008 -P http://localhost:8001/",
+    "mock": "http-mockjs server -p 8001",
+    "mock:init": "http-mockjs init",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tomato-js/function": "latest"
+  },
+  "devDependencies": {
+    "http-mockjs": "^4.3.1",
+    "http-server": "^0.12.1"
+  }
+}

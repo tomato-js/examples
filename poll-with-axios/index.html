@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <script type="module">
+      async function getUser() {
+        try {
+          const response = await axios.get("/user");
+          return response.data;
+        } catch (error) {
+          console.error(error);
+        }
+      }
+      async function getUser2() {
+        try {
+          const response = await axios.get("/user2");
+          return response.data;
+        } catch (error) {
+          console.error(error);
+        }
+      }
+      import { poll } from "./node_modules/@tomato-js/function/dist/esm/poll.js";
+      const { poller, cancel } = poll({
+        fn: getUser,
+        validate: v => v.result === true,
+        interval: 1000,
+        maxAttempts: 20
+      });
+      poller.then(data => {
+        console.log('poller done')
+        console.log(data);
+      });
+      setTimeout(() => cancel(), 7000);
+
+      const { poller: poller2, cancel: cancel2 } = poll({
+        fn: getUser2,
+        validate: v => v.result === false,
+        interval: 1000,
+        maxAttempts: 20
+      });
+      poller2.then(data => {
+        console.log('poller2 done')
+        console.log(data);
+      });
+    </script>
+  </body>
+</html>
