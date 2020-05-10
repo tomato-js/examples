@@ -10,7 +10,8 @@
     "build:all-in-typescript": "cd all-in-typescript && rollup -c",
     "build:split-in-commonjs": "cd split-in-commonjs && rollup -c",
     "build:split-in-esm": "cd split-in-esm && rollup -c",
-    "build:split-in-typescript": "cd split-in-typescript && rollup -c"
+    "build:split-in-typescript": "cd split-in-typescript && rollup -c",
+    "new": "plop"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "@babel/core": "^7.8.4",
     "@babel/preset-typescript": "^7.8.3",
     "http-server": "^0.12.1",
+    "plop": "^2.6.0",
     "rollup": "^1.31.1",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
