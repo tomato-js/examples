@@ -16,3 +16,4 @@ A repository containing small examples to illustrate the use of Tomato-js for cr
 - [split-in-esm](https://github.com/tomato-js/examples/tree/master/split-in-esm) import special util on demand by esmodule style.
 - [split-in-typescript](https://github.com/tomato-js/examples/tree/master/split-in-typescript) import special util on demand by typescript style.
 - [throttle-debounce](https://github.com/tomato-js/examples/tree/master/throttle-debounce) use @tomato-js/function 's throttle and debounce
+- [gitlab-clone](https://github.com/tomato-js/examples/tree/master/gitlab-clone) use @tomato-js/api 's Gitlab for clone a project or group of projects. 
