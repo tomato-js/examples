@@ -15,3 +15,4 @@
 - [split-in-typescript](https://github.com/tomato-js/examples/tree/master/split-in-typescript) 通过typescript的方式，通过子模块按需局部引入util
 - [throttle-debounce](https://github.com/tomato-js/examples/tree/master/throttle-debounce) 使用@tomato-js/function的throttle和debounce方法进行防抖和节流
 - [gitlab-clone](https://github.com/tomato-js/examples/tree/master/gitlab-clone) 使用@tomato-js/api的Gitlab完成gitlab工程和组的clone
+- [preload](https://github.com/tomato-js/examples/tree/master/preload) 使用@tomato-js/preload来完成图片的预加载
